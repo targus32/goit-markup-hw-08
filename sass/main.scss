@@ -1,0 +1,21 @@
+@import './utils/variables';
+
+@import './base/reset';
+@import './base/common';
+
+@import './components/section-title';
+@import './components/time-animation';
+@import './components/container';
+@import './components/section';
+@import './components/img';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about';
+@import './layout/benefits';
+@import './layout/company';
+@import './layout/footer';
+@import './layout/modal';
+@import './layout/team';
+@import './layout/portfolio-filtr';
+@import './layout/portfolio-cards';

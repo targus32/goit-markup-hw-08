@@ -1,0 +1,28 @@
+.benefits-content {
+  display: flex;
+  padding-left: 0px;
+}
+.benefits-content__text + .benefits-content__text {
+  margin-left: 30px;
+}
+.benefits h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  margin-bottom: 10px;
+}
+.benefits p {
+  line-height: 1.71;
+}
+.benefits-background {
+  background: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
