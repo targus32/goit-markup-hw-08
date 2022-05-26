@@ -116,6 +116,7 @@ img {
 
 .mobile-menu-open__icon {
   background-color: aqua;
+  display: block;
 }
 
 .page-header,
