@@ -1,3 +1,12 @@
+// Mobile menu
+.mobile-menu-open {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.mobile-menu-open__icon {
+  background-color: aqua;
+}
 .page-header,
 .navigation {
   display: flex;
@@ -11,6 +20,8 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: flex;
+  // Скрыт
+  display: none;
 }
 .navigation__link:not(:last-child),
 .header-contact__item:not(:last-child) {

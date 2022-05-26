@@ -1,15 +1,18 @@
 .company {
-  padding: 0px;
-  display: flex;
+  // padding: 0px;
+  // display: flex;
   justify-content: center;
 }
 .company__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 .company__link {
+  margin-right: auto;
+  margin-left: auto;
+
   display: block;
-  margin: 0px;
-  padding: 0px;
+  // margin: 0px;
+  // padding: 0px;
   width: 170px;
   height: 92px;
   display: flex;
