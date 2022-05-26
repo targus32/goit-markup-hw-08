@@ -108,19 +108,6 @@ img {
   width: 100%;
 }
 
-.mobile-menu-open {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  padding: 0;
-  border: none;
-}
-
-.mobile-menu-open__icon {
-  background-color: aqua;
-  display: block;
-}
-
 .page-header,
 .navigation {
   display: -webkit-box;
@@ -140,7 +127,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: none;
 }
 
 .navigation__link:not(:last-child),
@@ -180,14 +166,9 @@ img {
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 1.17;
-}
-@media screen and (min-width: 1200px) {
-  .navigation__logo {
-    font-size: 26px;
-    margin-right: 93px;
-  }
+  font-size: 26px;
+  line-height: 1.19;
+  margin-right: 93px;
 }
 
 .accent {
@@ -314,6 +295,12 @@ img {
 
 .about {
   padding-top: 0px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    display: block;
+  }
 }
 
 .about-content {
@@ -562,13 +549,52 @@ img {
 }
 
 .footer-right {
+  text-align: center;
   width: 206px;
   height: 80px;
-  margin-right: 93px;
+}
+@media screen and (max-width: 768px) {
+  .footer-right {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer-right {
+    margin-bottom: 102px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .footer-right {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-right {
+    margin-right: 93px;
+    text-align: left;
+  }
 }
 
 .footer-left {
-  margin-right: 70px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .footer-left {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-left {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-left {
+    margin-right: 70px;
+    text-align: left;
+  }
 }
 
 .footer-right__name,
@@ -628,6 +654,12 @@ img {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .footer-form {
+    text-align: center;
+  }
+}
+
 .footer-form__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
@@ -652,6 +684,11 @@ img {
   .footer-form__input {
     width: 358px;
     margin-right: 12px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .footer-form__input {
+    margin-bottom: 20px;
   }
 }
 .footer-form__input::-webkit-input-placeholder {
@@ -711,6 +748,8 @@ img {
 }
 
 .footer-form__button {
+  margin: 0 auto;
+  display: block;
   position: relative;
   width: 200px;
   height: 50px;

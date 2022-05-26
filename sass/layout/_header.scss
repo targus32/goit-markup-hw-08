@@ -1,16 +1,3 @@
-// Mobile menu
-.mobile-menu-open {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  padding: 0;
-  border: none;
-}
-.mobile-menu-open__icon {
-  background-color: aqua;
-  display: block;
-}
-// Header
 .page-header,
 .navigation {
   display: flex;
@@ -24,8 +11,6 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: flex;
-  // Скрыт
-  display: none;
 }
 .navigation__link:not(:last-child),
 .header-contact__item:not(:last-child) {
@@ -63,13 +48,9 @@
   color: #000000;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 24px;
-
-  @media screen and (min-width: 1200px) {
-    font-size: 26px;
-    margin-right: 93px;
-  }
-  line-height: 1.17;
+  font-size: 26px;
+  line-height: 1.19;
+  margin-right: 93px;
 }
 .accent {
   color: var(--accent-color);
