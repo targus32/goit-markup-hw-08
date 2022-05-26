@@ -112,6 +112,8 @@ img {
   position: absolute;
   top: 10px;
   right: 15px;
+  padding: 0;
+  border: none;
 }
 
 .mobile-menu-open__icon {
@@ -178,9 +180,14 @@ img {
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  margin-right: 93px;
+  font-size: 24px;
+  line-height: 1.17;
+}
+@media screen and (min-width: 1200px) {
+  .navigation__logo {
+    font-size: 26px;
+    margin-right: 93px;
+  }
 }
 
 .accent {
@@ -240,13 +247,13 @@ img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Header480_2x.jpg);
   }
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/Header780_1x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Header780_1x.jpg);
   }
 }
-@media screen and (min-width: 760px) and (min-device-pixel-ratio: 2), screen and (min-width: 760px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 760px) and (min-resolution: 192dpi), screen and (min-width: 760px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/Header780_2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Header780_2x.jpg);
@@ -418,20 +425,51 @@ img {
 }
 
 .company {
+  padding: 0px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: -30px;
+}
+@media screen and (min-width: 480px) {
+  .company {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .company__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 480px) {
+  .company__item {
+    width: calc(50% - 30px);
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .company__item {
+    width: calc(33.3333333333% - 30px);
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .company__item {
+    width: calc(16.6666666667% - 30px);
+    margin-left: 30px;
+  }
+}
+
 .company__link {
   margin-right: auto;
   margin-left: auto;
   display: block;
-  width: 170px;
+  width: 100%;
   height: 92px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -460,9 +498,21 @@ img {
   padding: 60px 0;
 }
 
-.footer .navigation__logo {
+.navigation-footer-logo {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+}
+@media screen and (min-width: 1200px) {
+  .navigation-footer-logo {
+    font-size: 26px;
+  }
+}
+
+.footer .navigation-footer-logo {
   color: var(--primary-white-color);
-  margin-right: 0px;
 }
 
 .footer-adress {
@@ -489,13 +539,26 @@ img {
   margin-top: 9px;
 }
 
-.footer-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (min-width: 1200px) {
+  .footer-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-tablet-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .footer-right {
@@ -557,10 +620,12 @@ img {
 }
 
 /* Footer input */
-.footer-input-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .footer-input-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .footer-form__input {
