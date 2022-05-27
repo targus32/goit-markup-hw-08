@@ -801,22 +801,33 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
+  width: 450px;
+  height: 609px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
+}
 .modal h2 {
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .modal h2 {
+    line-height: 1.17;
+  }
 }
 
 .modal-button-close {
@@ -920,6 +931,28 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+@media screen and (min-width: 1200px) {
+  .modal-field__text.comment::-webkit-input-placeholder {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .modal-field__text.comment::-moz-placeholder {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .modal-field__text.comment:-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .modal-field__text.comment::-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .modal-field__text.comment::placeholder {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
 
 .modal-field__icons {
   position: absolute;
@@ -936,8 +969,8 @@ img {
 }
 
 .modal-check__text {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   display: -webkit-box;
@@ -949,6 +982,12 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .modal-check__text {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 .modal-check__text span {
   width: 16px;
@@ -970,10 +1009,16 @@ img {
 }
 
 .modal-check__conditions {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-check__conditions {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .modal-check__icon {
