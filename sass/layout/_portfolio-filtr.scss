@@ -13,11 +13,16 @@
     margin-bottom: 50px;
   }
 }
-
-.section-filter__btn {
-  @media screen and(max-width:768px) {
+@media screen and(max-width:767.98px) {
+  .section-filter li:nth-child(-n + 3) {
     margin-bottom: 21px;
   }
+  .section-filter li:nth-child(4) {
+    margin-left: 0;
+  }
+}
+
+.section-filter__btn {
   border: 1px solid transparent;
   border-radius: 4px;
   padding: 6px 22px;
@@ -44,9 +49,4 @@
 
 .section-filter li + li {
   margin-left: 8px;
-}
-@media screen and(max-width:767px) {
-  .section-filter li:nth-child(4) {
-    margin-left: 0;
-  }
 }
