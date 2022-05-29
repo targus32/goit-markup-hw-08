@@ -19,12 +19,22 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="page-header-line">
+    <header class="header page-header-line">
       <div class="container page-header">
         <nav class="navigation">
           <a class="navigation__logo link" href=""
             ><span class="accent">Web</span>Studio</a
           >
+          <button
+            type="button"
+            class="mobile-menu-open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="mobile-menu-open__icon" width="40" height="40">
+              <use href="./image/icons.svg#icon-menu-1_40px"></use>
+            </svg>
+          </button>
           <ul class="navigation__list">
             <li class="navigation__link">
               <a href="./index.html" class="link">Студия</a>
@@ -45,7 +55,11 @@
               href="mailto:info@devstudio.com"
               class="header-contact__link link"
             >
-              <svg class="header-contact__icon" width="16" height="12">
+              <svg
+                class="header-contact__icon icon-mail"
+                width="16"
+                height="12"
+              >
                 <use href="./image/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -53,7 +67,11 @@
           </li>
           <li class="header-contact__item">
             <a href="tel:+380961111111" class="header-contact__link link">
-              <svg class="header-contact__icon" width="10" height="16">
+              <svg
+                class="header-contact__icon icon-phone"
+                width="10"
+                height="16"
+              >
                 <use href="./image/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -61,7 +79,70 @@
           </li>
         </ul>
       </div>
-    </header> -->
+      <!-- Модальное окно хедер -->
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <div class="container">
+          <div class="mobile-menu-top">
+            <button type="submit" class="mobile-menu-close js-close-menu">
+              <svg class="mobile-menu-close__icon" width="40" height="40">
+                <use href="./image/icons.svg#icon-close_40px"></use>
+              </svg>
+            </button>
+            <ul class="mob-navigation">
+              <li class="mob-navigation__item">
+                <a href="./index.html" class="mob-navigation__link link"
+                  >Студия</a
+                >
+              </li>
+              <li class="mob-navigation__item">
+                <a
+                  href="./portfolio.html"
+                  class="mob-navigation__link link mob-current-navigation"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mob-navigation__item">
+                <a href="" class="mob-navigation__link link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-menu-bottom">
+            <ul class="mob-header-contact">
+              <li class="mob-header-contact__item">
+                <a
+                  href="tel:+380961111111"
+                  class="mob-header-contact-phone link"
+                >
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-header-contact__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-header-contact-mail link"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-network">
+              <li class="mob-network__item">
+                <a href="" class="mob-network__link link">Instagram</a>
+              </li>
+              <li class="mob-network__item">
+                <a href="" class="mob-network__link link">Twitter</a>
+              </li>
+              <li class="mob-network__item">
+                <a href="" class="mob-network__link link">Facebook</a>
+              </li>
+              <li class="mob-network__item">
+                <a href="" class="mob-network__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <!-- Секция с контентом для фильтрации -->
       <section class="section">
@@ -359,5 +440,12 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
