@@ -144,6 +144,7 @@
   padding-top: 48px;
   padding-bottom: 48px;
   transform: translateX(150%);
+  transition: transform var(--time) var(--cubic);
 
   .container {
     overflow-y: auto;
@@ -156,7 +157,6 @@
 }
 .mobile-menu.is-open {
   transform: translateX(0);
-  transition: transform var(--time) var(--cubic);
 }
 
 .mobile-menu-open {

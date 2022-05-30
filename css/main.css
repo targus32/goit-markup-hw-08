@@ -292,6 +292,10 @@ img {
   padding-bottom: 48px;
   -webkit-transform: translateX(150%);
           transform: translateX(150%);
+  -webkit-transition: -webkit-transform var(--time) var(--cubic);
+  transition: -webkit-transform var(--time) var(--cubic);
+  transition: transform var(--time) var(--cubic);
+  transition: transform var(--time) var(--cubic), -webkit-transform var(--time) var(--cubic);
 }
 .mobile-menu .container {
   overflow-y: auto;
@@ -311,10 +315,6 @@ img {
 .mobile-menu.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition: -webkit-transform var(--time) var(--cubic);
-  transition: -webkit-transform var(--time) var(--cubic);
-  transition: transform var(--time) var(--cubic);
-  transition: transform var(--time) var(--cubic), -webkit-transform var(--time) var(--cubic);
 }
 
 .mobile-menu-open {
