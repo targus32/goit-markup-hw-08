@@ -763,6 +763,11 @@ img {
             align-items: baseline;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer-tablet-flex {
+    margin-bottom: 60px;
+  }
+}
 
 .footer-right {
   text-align: center;
@@ -772,11 +777,6 @@ img {
 @media screen and (max-width: 768px) {
   .footer-right {
     margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .footer-right {
-    margin-bottom: 102px;
   }
 }
 @media screen and (max-width: 1200px) {
