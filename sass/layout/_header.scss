@@ -91,14 +91,7 @@
 .accent {
   color: var(--accent-color);
 }
-// .header-contact {
-//   margin-left: auto;
-//   @media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
-//     display: flex;
-//     flex-direction: column;
-//     margin-left: 84px;
-//   }
-// }
+
 .header-contact__item {
   @media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
     padding: 5px 0;
@@ -163,18 +156,9 @@
 }
 .mobile-menu.is-open {
   transform: translateX(0);
+  transition: transform var(--time) var(--cubic);
 }
-// @media screen and(max-width:767.98px) {
-//   .mobile-menu-open {
-//     position: absolute;
-//     top: 10px;
-//     right: 15px;
 
-//     padding: 0;
-//     border: none;
-//     background-color: #ffffff;
-//   }
-// }
 .mobile-menu-open {
   position: absolute;
   top: 10px;
@@ -196,6 +180,7 @@
   padding: 0;
   border: none;
   background-color: #ffffff;
+  transition: fill var(--time) var(--cubic);
   &:hover,
   &:focus {
     fill: var(--accent-color);

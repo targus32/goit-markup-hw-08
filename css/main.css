@@ -311,6 +311,10 @@ img {
 .mobile-menu.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  -webkit-transition: -webkit-transform var(--time) var(--cubic);
+  transition: -webkit-transform var(--time) var(--cubic);
+  transition: transform var(--time) var(--cubic);
+  transition: transform var(--time) var(--cubic), -webkit-transform var(--time) var(--cubic);
 }
 
 .mobile-menu-open {
@@ -335,6 +339,8 @@ img {
   padding: 0;
   border: none;
   background-color: #ffffff;
+  -webkit-transition: fill var(--time) var(--cubic);
+  transition: fill var(--time) var(--cubic);
 }
 .mobile-menu-close:hover, .mobile-menu-close:focus {
   fill: var(--accent-color);
@@ -864,7 +870,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199.98px) {
   .footer-form {
     text-align: center;
   }
@@ -1527,7 +1533,7 @@ img {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .cards__item {
     margin-bottom: 30px;
   }
