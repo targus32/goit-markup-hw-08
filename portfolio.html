@@ -32,7 +32,7 @@
             aria-controls="mobile-menu"
           >
             <svg class="mobile-menu-open__icon" width="40" height="40">
-              <use href="./image/icons.svg#icon-menu-1_40px"></use>
+              <use href="./images/icons.svg#icon-menu-1_40px"></use>
             </svg>
           </button>
           <ul class="navigation__list">
@@ -60,7 +60,7 @@
                 width="16"
                 height="12"
               >
-                <use href="./image/icons.svg#envelope"></use>
+                <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
             >
@@ -72,7 +72,7 @@
                 width="10"
                 height="16"
               >
-                <use href="./image/icons.svg#smartphone"></use>
+                <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
@@ -85,7 +85,7 @@
           <div class="mobile-menu-top">
             <button type="submit" class="mobile-menu-close js-close-menu">
               <svg class="mobile-menu-close__icon" width="40" height="40">
-                <use href="./image/icons.svg#icon-close_40px"></use>
+                <use href="./images/icons.svg#icon-close_40px"></use>
               </svg>
             </button>
             <ul class="mob-navigation">
@@ -179,12 +179,35 @@
             <li class="cards__item">
               <a href="" class="link cards__link">
                 <div class="cards__wrap">
-                  <img
-                    srcset="./image/filtr1.jpg 1x, ./image/filtr1-2x.jpg 2x"
-                    width="370"
-                    src="./image/filtr1.jpg"
-                    alt="Краткая информация о сотрудниках"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/cards/1200/filtr1-1200-1x.jpg 1x,
+                        ./images/cards/1200/filtr1-1200-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/cards/768/filtr1-768-1x.jpg 1x,
+                        ./images/cards/768/filtr1-768-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/cards/480/filtr1-480-1x.jpg 1x,
+                        ./images/cards/480/filtr1-480-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      width="270"
+                      src="./images/cards/1200/filtr1-1200-1x.jpg"
+                      alt="Краткая информация о сотрудниках"
+                    />
+                  </picture>
+
                   <p class="cards__wrap-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -200,12 +223,35 @@
             <li class="cards__item">
               <a href="" class="link cards__link">
                 <div class="cards__wrap">
-                  <img
-                    srcset="./image/filtr2.jpg 1x, ./image/filtr2-2x.jpg 2x"
-                    width="370"
-                    src="./image/filtr2.jpg"
-                    alt="Баскетболисты в борьбе за мяч"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/cards/1200/filtr2-1200-1x.jpg 1x,
+                        ./images/cards/1200/filtr2-1200-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/cards/768/filtr2-768-1x.jpg 1x,
+                        ./images/cards/768/filtr2-768-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/cards/480/filtr2-480-1x.jpg 1x,
+                        ./images/cards/480/filtr2-480-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      width="270"
+                      src="./images/cards/1200/filtr2-1200-1x.jpg"
+                      alt="Баскетболисты в борьбе за мяч"
+                    />
+                  </picture>
+
                   <p class="cards__wrap-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -221,12 +267,35 @@
             <li class="cards__item">
               <a href="" class="link cards__link">
                 <div class="cards__wrap">
-                  <img
-                    srcset="./image/filtr3.jpg 1x, ./image/filtr3-2x.jpg 2x"
-                    width="370"
-                    src="./image/filtr3.jpg"
-                    alt="Seafood restaurant эмблема"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/cards/1200/filtr3-1200-1x.jpg 1x,
+                        ./images/cards/1200/filtr3-1200-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/cards/768/filtr3-768-1x.jpg 1x,
+                        ./images/cards/768/filtr3-768-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/cards/480/filtr3-480-1x.jpg 1x,
+                        ./images/cards/480/filtr3-480-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      width="270"
+                      src="./images/cards/1200/filtr3-1200-1x.jpg"
+                      alt="Seafood restaurant эмблема"
+                    />
+                  </picture>
+
                   <p class="cards__wrap-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -242,12 +311,35 @@
             <li class="cards__item">
               <a href="" class="link cards__link">
                 <div class="cards__wrap">
-                  <img
-                    srcset="./image/filtr4.jpg 1x, ./image/filtr4-2x.jpg 2x"
-                    width="370"
-                    src="./image/filtr4.jpg"
-                    alt="Черные наушники"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/cards/1200/filtr4-1200-1x.jpg 1x,
+                        ./images/cards/1200/filtr4-1200-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/cards/768/filtr4-768-1x.jpg 1x,
+                        ./images/cards/768/filtr4-768-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/cards/480/filtr4-480-1x.jpg 1x,
+                        ./images/cards/480/filtr4-480-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      width="270"
+                      src="./images/cards/1200/filtr4-1200-1x.jpg"
+                      alt="Черные наушники"
+                    />
+                  </picture>
+                  4
                   <p class="cards__wrap-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -263,12 +355,35 @@
             <li class="cards__item">
               <a href="" class="link cards__link">
                 <div class="cards__wrap">
-                  <img
-                    srcset="./image/filtr5.jpg 1x, ./image/filtr5-2x.jpg 2x"
-                    width="370"
-                    src="./image/filtr5.jpg"
-                    alt="Две картонные коробки белого и коричневого цвета"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/cards/1200/filtr5-1200-1x.jpg 1x,
+                        ./images/cards/1200/filtr5-1200-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/cards/768/filtr5-768-1x.jpg 1x,
+                        ./images/cards/768/filtr5-768-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/cards/480/filtr5-480-1x.jpg 1x,
+                        ./images/cards/480/filtr5-480-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      width="270"
+                      src="./images/cards/1200/filtr5-1200-1x.jpg"
+                      alt="Две картонные коробки белого и коричневого цвета"
+                    />
+                  </picture>
+
                   <p class="cards__wrap-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -284,12 +399,35 @@
             <li class="cards__item">
               <a href="" class="link cards__link">
                 <div class="cards__wrap">
-                  <img
-                    srcset="./image/filtr6.jpg 1x, ./image/filtr6-2x.jpg 2x"
-                    width="370"
-                    src="./image/filtr6.jpg"
-                    alt="Монитор Эппл с картой мира без границ"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/cards/1200/filtr6-1200-1x.jpg 1x,
+                        ./images/cards/1200/filtr6-1200-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/cards/768/filtr6-768-1x.jpg 1x,
+                        ./images/cards/768/filtr6-768-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/cards/480/filtr6-480-1x.jpg 1x,
+                        ./images/cards/480/filtr6-480-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      width="270"
+                      src="./images/cards/1200/filtr6-1200-1x.jpg"
+                      alt="Монитор Эппл с картой мира без границ"
+                    />
+                  </picture>
+
                   <p class="cards__wrap-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -305,12 +443,40 @@
             <li class="cards__item">
               <a href="" class="link cards__link">
                 <div class="cards__wrap">
-                  <img
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/cards/1200/filtr7-1200-1x.jpg 1x,
+                        ./images/cards/1200/filtr7-1200-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/cards/768/filtr7-768-1x.jpg 1x,
+                        ./images/cards/768/filtr7-768-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/cards/480/filtr7-480-1x.jpg 1x,
+                        ./images/cards/480/filtr7-480-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      width="270"
+                      src="./images/cards/1200/filtr7-1200-1x.jpg"
+                      alt="Открытая книга"
+                    />
+                  </picture>
+                  <!-- <img
                     srcset="./image/filtr7.jpg 1x, ./image/filtr7-2x.jpg 2x"
                     width="370"
                     src="./image/filtr7.jpg"
                     alt="Открытая книга"
-                  />
+                  /> -->
                   <p class="cards__wrap-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -326,12 +492,35 @@
             <li class="cards__item">
               <a href="" class="link cards__link">
                 <div class="cards__wrap">
-                  <img
-                    srcset="./image/filtr8.jpg 1x, ./image/filtr8-2x.jpg 2x"
-                    width="370"
-                    src="./image/filtr8.jpg"
-                    alt="Белая лейба с черными буквами"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/cards/1200/filtr8-1200-1x.jpg 1x,
+                        ./images/cards/1200/filtr8-1200-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/cards/768/filtr8-768-1x.jpg 1x,
+                        ./images/cards/768/filtr8-768-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/cards/480/filtr8-480-1x.jpg 1x,
+                        ./images/cards/480/filtr8-480-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      width="270"
+                      src="./images/cards/1200/filtr8-1200-1x.jpg"
+                      alt="Белая лейба с черными буквами"
+                    />
+                  </picture>
+                  8
                   <p class="cards__wrap-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -347,12 +536,35 @@
             <li class="cards__item">
               <a href="" class="link cards__link">
                 <div class="cards__wrap">
-                  <img
-                    srcset="./image/filtr9.jpg 1x, ./image/filtr9-2x.jpg 2x"
-                    width="370"
-                    src="./image/filtr9.jpg"
-                    alt="Набор текста на ноутбуке"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/cards/1200/filtr9-1200-1x.jpg 1x,
+                        ./images/cards/1200/filtr9-1200-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/cards/768/filtr9-768-1x.jpg 1x,
+                        ./images/cards/768/filtr9-768-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/cards/480/filtr9-480-1x.jpg 1x,
+                        ./images/cards/480/filtr9-480-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      width="270"
+                      src="./images/cards/1200/filtr9-1200-1x.jpg"
+                      alt="Набор текста на ноутбуке"
+                    />
+                  </picture>
+
                   <p class="cards__wrap-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -399,28 +611,28 @@
                 <li class="footer-right__item">
                   <a href="" class="footer-right__link">
                     <svg class="footer-right__icon" width="20" height="20">
-                      <use href="./image/icons.svg#instagramf"></use>
+                      <use href="./images/icons.svg#instagramf"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="footer-right__item">
                   <a href="" class="footer-right__link">
                     <svg class="footer-right__icon" width="20" height="20">
-                      <use href="./image/icons.svg#twitterf"></use>
+                      <use href="./images/icons.svg#twitterf"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="footer-right__item">
                   <a href="" class="footer-right__link">
                     <svg class="footer-right__icon" width="20" height="20">
-                      <use href="./image/icons.svg#facebookf"></use>
+                      <use href="./images/icons.svg#facebookf"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="footer-right__item">
                   <a href="" class="footer-right__link">
                     <svg class="footer-right__icon" width="20" height="20">
-                      <use href="./image/icons.svg#linkedinf"></use>
+                      <use href="./images/icons.svg#linkedinf"></use>
                     </svg>
                   </a>
                 </li>
@@ -440,7 +652,7 @@
 
               <button class="footer-form__button" type="submit">
                 <svg class="footer-form__icon" width="24" height="24">
-                  <use href="./image/icons.svg#icon-send"></use>
+                  <use href="./images/icons.svg#icon-send"></use>
                 </svg>
                 Подписаться
               </button>

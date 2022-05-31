@@ -33,7 +33,7 @@
             aria-controls="mobile-menu"
           >
             <svg class="mobile-menu-open__icon" width="40" height="40">
-              <use href="./image/icons.svg#icon-menu-1_40px"></use>
+              <use href="./images/icons.svg#icon-menu-1_40px"></use>
             </svg>
           </button>
           <ul class="navigation__list">
@@ -59,7 +59,7 @@
                 width="16"
                 height="12"
               >
-                <use href="./image/icons.svg#envelope"></use>
+                <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
             >
@@ -71,7 +71,7 @@
                 width="10"
                 height="16"
               >
-                <use href="./image/icons.svg#smartphone"></use>
+                <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
@@ -84,7 +84,7 @@
           <div class="mobile-menu-top">
             <button type="submit" class="mobile-menu-close js-close-menu">
               <svg class="mobile-menu-close__icon" width="40" height="40">
-                <use href="./image/icons.svg#icon-close_40px"></use>
+                <use href="./images/icons.svg#icon-close_40px"></use>
               </svg>
             </button>
             <ul class="mob-navigation">
@@ -160,7 +160,7 @@
             <li class="benefits-content__text">
               <div class="benefits-background">
                 <svg class="benefits-icon" width="70" height="70">
-                  <use href="./image/icons.svg#antenna"></use>
+                  <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
               <h3>Внимание к деталям</h3>
@@ -172,7 +172,7 @@
             <li class="benefits-content__text">
               <div class="benefits-background">
                 <svg class="benefits-icon" width="70" height="70">
-                  <use href="./image/icons.svg#clock"></use>
+                  <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
               <h3>Пунктуальность</h3>
@@ -184,7 +184,7 @@
             <li class="benefits-content__text">
               <div class="benefits-background">
                 <svg class="benefits-icon" width="70" height="70">
-                  <use href="./image/icons.svg#diagram"></use>
+                  <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
               <h3>Планирование</h3>
@@ -196,7 +196,7 @@
             <li class="benefits-content__text">
               <div class="benefits-background">
                 <svg class="benefits-icon" width="70" height="70">
-                  <use href="./image/icons.svg#astronaut"></use>
+                  <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
               <h3>Современные технологии</h3>
@@ -215,9 +215,12 @@
           <ul class="about-content">
             <li class="about-content__list">
               <img
-                srcset="./image/box1.jpg 1x, ./image/box1-2x.jpg 2x"
+                srcset="
+                  ./images/about/box1-1x.jpg 1x,
+                  ./images/about/box1-2x.jpg 2x
+                "
                 width="370"
-                src="./image/box1.jpg"
+                src="./images/about/box1-1x.jpg"
                 alt="Ввод данных с помощью клавиатруры"
               />
               <div class="about-name">
@@ -226,9 +229,12 @@
             </li>
             <li class="about-content__list">
               <img
-                srcset="./image/box2.jpg 1x, ./image/box2-2x.jpg 2x"
+                srcset="
+                  ./images/about/box2-1x.jpg 1x,
+                  ./images/about/box2-2x.jpg 2x
+                "
                 width="370"
-                src="./image/box2.jpg"
+                src="./images/about/box2-1x.jpg"
                 alt="Сравнение конечного продукта в смартфоне с макетом"
               />
               <div class="about-name">
@@ -237,9 +243,12 @@
             </li>
             <li class="about-content__list">
               <img
-                srcset="./image/box3.jpg 1x, ./image/box3-2x.jpg 2x"
+                srcset="
+                  ./images/about/box3-1x.jpg 1x,
+                  ./images/about/box3-2x.jpg 2x
+                "
                 width="370"
-                src="./image/box3.jpg"
+                src="./images/about/box3-1x.jpg"
                 alt="Работа в планшете с цветовой палитрой"
               />
               <div class="about-name">
@@ -255,12 +264,35 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-card">
             <li class="team-card__name">
-              <img
-                srcset="./image/team1.jpg 1x, ./image/team1-2x.jpg 2x"
-                width="270"
-                src="./image/team1.jpg"
-                alt="Игорь Демьяненко"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/1200/team1-1200-1x.jpg 1x,
+                    ./images/team/1200/team1-1200-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/768/team1-768-1x.jpg 1x,
+                    ./images/team/768/team1-768-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/480/team1-480-1x.jpg 1x,
+                    ./images/team/480/team1-480-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  width="270"
+                  src="./images/team/1200/team1-1200-1x.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
+
               <div class="team-table">
                 <h3>Игорь Демьяненко</h3>
                 <p>Product Designer</p>
@@ -272,7 +304,7 @@
                         width="20"
                         height="20"
                       >
-                        <use href="./image/icons.svg#instagram"></use>
+                        <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
@@ -283,7 +315,7 @@
                         width="20"
                         height="20"
                       >
-                        <use href="./image/icons.svg#twitter"></use>
+                        <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -294,7 +326,7 @@
                         width="20"
                         height="20"
                       >
-                        <use href="./image/icons.svg#facebook"></use>
+                        <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
@@ -305,7 +337,7 @@
                         width="20"
                         height="20"
                       >
-                        <use href="./image/icons.svg#linkedin"></use>
+                        <use href="./images/icons.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -313,12 +345,35 @@
               </div>
             </li>
             <li class="team-card__name">
-              <img
-                srcset="./image/team2.jpg 1x, ./image/team2-2x.jpg 2x"
-                width="270"
-                src="./image/team2.jpg"
-                alt="Ольга Репина"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/1200/team2-1200-1x.jpg 1x,
+                    ./images/team/1200/team2-1200-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/768/team2-768-1x.jpg 1x,
+                    ./images/team/768/team2-768-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/480/team2-480-1x.jpg 1x,
+                    ./images/team/480/team2-480-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  width="270"
+                  src="./images/team/1200/team2-1200-1x.jpg"
+                  alt="Ольга Репина"
+                />
+              </picture>
+
               <div class="team-table">
                 <h3>Ольга Репина</h3>
                 <p>Frontend Developer</p>
@@ -330,7 +385,7 @@
                         width="20"
                         height="20"
                       >
-                        <use href="./image/icons.svg#instagram"></use>
+                        <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
@@ -341,7 +396,7 @@
                         width="20"
                         height="20"
                       >
-                        <use href="./image/icons.svg#twitter"></use>
+                        <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -352,7 +407,7 @@
                         width="20"
                         height="20"
                       >
-                        <use href="./image/icons.svg#facebook"></use>
+                        <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
@@ -363,7 +418,7 @@
                         width="20"
                         height="20"
                       >
-                        <use href="./image/icons.svg#linkedin"></use>
+                        <use href="./images/icons.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -371,12 +426,34 @@
               </div>
             </li>
             <li class="team-card__name">
-              <img
-                srcset="./image/team3.jpg 1x, ./image/team3-2x.jpg 2x"
-                width="270"
-                src="./image/team3.jpg"
-                alt="Николай Тарасов"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/1200/team3-1200-1x.jpg 1x,
+                    ./images/team/1200/team3-1200-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/768/team3-768-1x.jpg 1x,
+                    ./images/team/768/team3-768-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/480/team3-480-1x.jpg 1x,
+                    ./images/team/480/team3-480-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  width="270"
+                  src="./images/team/1200/team3-1200-1x.jpg"
+                  alt="Николай Тарасов"
+                />
+              </picture>
               <div class="team-table">
                 <h3>Николай Тарасов</h3>
                 <p>Marketing</p>
@@ -388,7 +465,7 @@
                         width="20"
                         height="20"
                       >
-                        <use href="./image/icons.svg#instagram"></use>
+                        <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
@@ -399,7 +476,7 @@
                         width="20"
                         height="20"
                       >
-                        <use href="./image/icons.svg#twitter"></use>
+                        <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -410,7 +487,7 @@
                         width="20"
                         height="20"
                       >
-                        <use href="./image/icons.svg#facebook"></use>
+                        <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
@@ -421,7 +498,7 @@
                         width="20"
                         height="20"
                       >
-                        <use href="./image/icons.svg#linkedin"></use>
+                        <use href="./images/icons.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -429,12 +506,35 @@
               </div>
             </li>
             <li class="team-card__name">
-              <img
-                srcset="./image/team4.jpg 1x, ./image/team4-2x.jpg 2x"
-                width="270"
-                src="./image/team4.jpg"
-                alt="Михаил Ермаков"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/1200/team4-1200-1x.jpg 1x,
+                    ./images/team/1200/team4-1200-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/768/team4-768-1x.jpg 1x,
+                    ./images/team/768/team4-768-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/480/team4-480-1x.jpg 1x,
+                    ./images/team/480/team4-480-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  width="270"
+                  src="./images/team/1200/team4-1200-1x.jpg"
+                  alt="Михаил Ермаков"
+                />
+              </picture>
+
               <div class="team-table">
                 <h3>Михаил Ермаков</h3>
                 <p>UI Designer</p>
@@ -446,7 +546,7 @@
                         width="20"
                         height="20"
                       >
-                        <use href="./image/icons.svg#instagram"></use>
+                        <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
@@ -457,7 +557,7 @@
                         width="20"
                         height="20"
                       >
-                        <use href="./image/icons.svg#twitter"></use>
+                        <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -468,7 +568,7 @@
                         width="20"
                         height="20"
                       >
-                        <use href="./image/icons.svg#facebook"></use>
+                        <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
@@ -479,7 +579,7 @@
                         width="20"
                         height="20"
                       >
-                        <use href="./image/icons.svg#linkedin"></use>
+                        <use href="./images/icons.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -497,42 +597,42 @@
             <li class="company__item">
               <a href="" class="company__link">
                 <svg class="company__icons" width="106" height="60">
-                  <use href="./image/icons.svg#yaco"></use>
+                  <use href="./images/icons.svg#yaco"></use>
                 </svg>
               </a>
             </li>
             <li class="company__item">
               <a href="" class="company__link">
                 <svg class="company__icons" width="106" height="60">
-                  <use href="./image/icons.svg#tagline"></use>
+                  <use href="./images/icons.svg#tagline"></use>
                 </svg>
               </a>
             </li>
             <li class="company__item">
               <a href="" class="company__link">
                 <svg class="company__icons" width="106" height="60">
-                  <use href="./image/icons.svg#company"></use>
+                  <use href="./images/icons.svg#company"></use>
                 </svg>
               </a>
             </li>
             <li class="company__item">
               <a href="" class="company__link">
                 <svg class="company__icons" width="106" height="60">
-                  <use href="./image/icons.svg#foster"></use>
+                  <use href="./images/icons.svg#foster"></use>
                 </svg>
               </a>
             </li>
             <li class="company__item">
               <a href="" class="company__link">
                 <svg class="company__icons" width="106" height="60">
-                  <use href="./image/icons.svg#brand"></use>
+                  <use href="./images/icons.svg#brand"></use>
                 </svg>
               </a>
             </li>
             <li class="company__item">
               <a href="" class="company__link">
                 <svg class="company__icons" width="106" height="60">
-                  <use href="./image/icons.svg#comptag"></use>
+                  <use href="./images/icons.svg#comptag"></use>
                 </svg>
               </a>
             </li>
@@ -571,28 +671,28 @@
                 <li class="footer-right__item">
                   <a href="" class="footer-right__link">
                     <svg class="footer-right__icon" width="20" height="20">
-                      <use href="./image/icons.svg#instagramf"></use>
+                      <use href="./images/icons.svg#instagramf"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="footer-right__item">
                   <a href="" class="footer-right__link">
                     <svg class="footer-right__icon" width="20" height="20">
-                      <use href="./image/icons.svg#twitterf"></use>
+                      <use href="./images/icons.svg#twitterf"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="footer-right__item">
                   <a href="" class="footer-right__link">
                     <svg class="footer-right__icon" width="20" height="20">
-                      <use href="./image/icons.svg#facebookf"></use>
+                      <use href="./images/icons.svg#facebookf"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="footer-right__item">
                   <a href="" class="footer-right__link">
                     <svg class="footer-right__icon" width="20" height="20">
-                      <use href="./image/icons.svg#linkedinf"></use>
+                      <use href="./images/icons.svg#linkedinf"></use>
                     </svg>
                   </a>
                 </li>
@@ -612,7 +712,7 @@
 
               <button class="footer-form__button" type="submit">
                 <svg class="footer-form__icon" width="24" height="24">
-                  <use href="./image/icons.svg#icon-send"></use>
+                  <use href="./images/icons.svg#icon-send"></use>
                 </svg>
                 Подписаться
               </button>
@@ -626,7 +726,7 @@
       <div class="modal">
         <button type="submit" class="modal-button-close" data-modal-close>
           <svg class="modal-button-close__icon" width="18" height="18">
-            <use href="./image/icons.svg#icon-close-black-18dp"></use>
+            <use href="./images/icons.svg#icon-close-black-18dp"></use>
           </svg>
         </button>
         <h2>Оставьте свои данные, мы вам перезвоним</h2>
@@ -641,7 +741,7 @@
                 id="name"
               />
               <svg class="modal-field__icons" width="18" height="18">
-                <use href="./image/icons.svg#person-black-18dp-1"></use>
+                <use href="./images/icons.svg#person-black-18dp-1"></use>
               </svg>
             </div>
           </div>
@@ -655,7 +755,7 @@
                 id="phone"
               />
               <svg class="modal-field__icons" width="18" height="18">
-                <use href="./image/icons.svg#phone-black-18dp-1"></use>
+                <use href="./images/icons.svg#phone-black-18dp-1"></use>
               </svg>
             </div>
           </div>
@@ -670,7 +770,7 @@
                 required
               />
               <svg class="modal-field__icons" width="18" height="18">
-                <use href="./image/icons.svg#email-black-18dp-1"></use>
+                <use href="./images/icons.svg#email-black-18dp-1"></use>
               </svg>
             </div>
           </div>
@@ -695,7 +795,7 @@
             <label for="check" class="modal-check__text">
               <span>
                 <svg class="modal-check__icon" width="11" height="8">
-                  <use href="./image/icons.svg#check"></use>
+                  <use href="./images/icons.svg#check"></use>
                 </svg>
               </span>
               Соглашаюсь с рассылкой и принимаю &nbsp;
