@@ -4,7 +4,7 @@
   justify-content: center;
   margin-bottom: -30px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 319.98px) {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
@@ -14,7 +14,7 @@
   margin-bottom: 30px;
 }
 .company__item {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 319.98px) {
     width: calc(100% / 2 - 30px);
     margin-left: 30px;
   }

@@ -211,14 +211,20 @@
 }
 .mob-header-contact-phone {
   font-weight: 500;
-  font-size: 34px;
+  @media screen and (min-width: 479.98px) {
+    font-size: 34px;
+  }
+  font-size: 24px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
 .mob-header-contact-mail {
   font-weight: 500;
-  font-size: 24px;
+  @media screen and (min-width: 479.98px) {
+    font-size: 24px;
+  }
+  font-size: 20px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
@@ -239,7 +245,10 @@
 }
 .mob-network__link {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
+  @media screen and (min-width: 479.98px) {
+    font-size: 18px;
+  }
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #2196f3;
